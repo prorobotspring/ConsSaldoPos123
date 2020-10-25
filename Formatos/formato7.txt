@@ -1,0 +1,3 @@
+Plan ${Short_Description}.Consumos al ${Fecha_Hora}: Bs.F ${Total_Consumos}
+Disponible: ${Voz D-D}Min412; ${Voz OtOp}MinOtrasOp; ${SMS}SMS;
+${GPRS}KB Ultimo Pago:Bs.${FLastPayment} al ${LastPaymentDate}

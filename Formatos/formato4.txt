@@ -1,0 +1,2 @@
+Plan ${Short_Description}.Consumos al ${Fecha_Hora}: Bs.F ${Total_Consumos}
+Disponible: ${GPRS}KB Ultimo Pago:Bs.${FLastPayment} al ${LastPaymentDate}

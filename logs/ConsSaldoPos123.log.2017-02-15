@@ -1,0 +1,39 @@
+[2017Feb15 12:59:38,889][INFO ][1487179778889][onMessage Corte123MDBean.java:124][Mensaje recibido con exito en la cola de SOLICITUD <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>String</Login>
+	<Channel></Channel>
+	<System></System>
+	<MSISDN>
+		<Number>584123440959</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2017Feb15 12:59:38,906][INFO ][1487179778889][processRequest RCController.java:66][Recibido un nuevo request de la cola]
+[2017Feb15 12:59:38,907][DEBUG][1487179778889][buildRequest RCHelper.java:78][INICIO de parser XML de entrada]
+[2017Feb15 12:59:38,917][INFO ][1487179778889][processRequest RCController.java:82][GSM a consultar: 584123440959]
+[2017Feb15 12:59:38,920][DEBUG][1487179778889][execute IVRPostDelegator.java:106][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2017Feb15 12:59:38,921][DEBUG][1487179778889][execute IVRPostDelegator.java:114][Query = SELECT ( CASE KENAN3.VIP WHEN 6 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 51 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 52 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 53 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 54 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 55 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 56 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 151 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 152 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 153 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 154 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 155 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' WHEN 156 THEN 'Podra conocer el saldo actual de su linea a traves del administrador de su cuenta' ELSE 'Al ' || TO_CHAR(FECHA_CORTE,'dd/mm/yy') || ' de Bs. ' || TRIM(TO_CHAR(ACTUAL,'99G999G999D99')) || ' para cancelar antes del ' || TO_CHAR(VENCIMIENTO,'dd/mm/yy') || '. Su ultimo pago fue de Bs.' || TRIM(TO_CHAR(SALDO_ANTERIOR,'99G999G999D99')) || ' el dia ' || TO_CHAR(FECHA_ANTERIOR,'dd/mm/yy') END ) FROM IVR.KENAN1, IVR.KENAN2, IVR.KENAN3 WHERE KENAN1.TELEFONO = KENAN2.TELEFONO AND KENAN3.TELEFONO = KENAN1.TELEFONO AND KENAN1.TELEFONO = ?]
+[2017Feb15 12:59:38,992][DEBUG][1487179778889][execute IVRPostDelegator.java:122][contents = Al 01/09/13 de Bs. .00 para cancelar antes del 16/09/13. Su ultimo pago fue de Bs.246.10 el dia 05/09/13]
+[2017Feb15 12:59:38,993][DEBUG][1487179778889][processRequest RCController.java:98][Message1 (Consumido): Al 01/09/13 de Bs. .00 para cancelar antes del 16/09/13. Su ultimo pago fue de Bs.246.10 el dia 05/09/13]
+[2017Feb15 12:59:38,993][DEBUG][1487179778889][processRequest RCController.java:99][sms1: true]
+[2017Feb15 12:59:38,994][INFO ][1487179778889][processRequest RCController.java:102][Enviando SMS2]
+[2017Feb15 12:59:38,995][DEBUG][1487179778889][execute SMSSenderMsj1Delegator.java:125][http://CFGLOBD09:8801/SMS/SMSSenderServlet]
+[2017Feb15 12:59:38,997][DEBUG][1487179778889][execute SMSSenderMsj1Delegator.java:138][payloadAl 01/09/13 de Bs. .00 para cancelar antes del 16/09/13. Su ultimo pago fue de Bs.246.10 el dia 05/09/13]
+[2017Feb15 12:59:39,156][INFO ][1487179778889][execute SMSSenderMsj1Delegator.java:145][Envio de mensaje realizado]
+[2017Feb15 12:59:39,157][INFO ][1487179778889][processRequest RCController.java:104][SMS 1 enviado]
+[2017Feb15 12:59:39,161][DEBUG][1487179778889][execute SolicitudQueueSubmiterSMS2.java:117][Nuevo request: 584123440959]
+[2017Feb15 12:59:39,665][INFO ][1487179778889][execute SolicitudQueueSubmiterSMS2.java:122][Nuevo request enviado a la cola de solicitudes del segundo mensaje (SU_CORTE_AL]
+[2017Feb15 12:59:39,668][DEBUG][1487179778889][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2017Feb15 12:59:39,669][DEBUG][1487179778889][processRequest RCController.java:148][Response: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado con exito"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2017Feb15 12:59:39,670][INFO ][1487179778889][onMessage Corte123MDBean.java:129][Solicitud procesada <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado con exito"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]

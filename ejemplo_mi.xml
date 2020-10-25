@@ -1,0 +1,93 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+         <ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+            <ax27:error xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ax27:lastExtractionProcessEndDate>21/05/2010 10:05:57 PM</ax27:lastExtractionProcessEndDate>
+            <ax27:lastExtractionProcessStartDate>01/03/2010 12:03:00 AM</ax27:lastExtractionProcessStartDate>
+            <ax27:lastPayment>7.705,45</ax27:lastPayment>
+            <ax27:lastPaymentDate>20/03/10</ax27:lastPaymentDate>
+            <ax27:short_Description>Empresa+</ax27:short_Description>
+            <ax27:totalConsumptions>17661.96</ax27:totalConsumptions>
+            <ax27:trafficDetailsData type="com.corte.webservices.domain.TrafficDetailsData">
+               <ax27:trafficDetails type="com.corte.webservices.domain.TrafficDetails">
+                  <ax27:balanceUnits>By Use</ax27:balanceUnits>
+                  <ax27:ratedUnits>156</ax27:ratedUnits>
+                  <ax27:typesofUse>32523</ax27:typesofUse>
+                  <ax27:unitCrId>-2</ax27:unitCrId>
+                  <ax27:unitCrIdDesc>Navegación BlackBerry</ax27:unitCrIdDesc>
+                  <ax27:unitsFree>N/A</ax27:unitsFree>
+                  <ax27:unitsType>K Bytes</ax27:unitsType>
+               </ax27:trafficDetails>
+               <ax27:trafficDetails type="com.corte.webservices.domain.TrafficDetails">
+                  <ax27:balanceUnits>By Use</ax27:balanceUnits>
+                  <ax27:ratedUnits>175500</ax27:ratedUnits>
+                  <ax27:typesofUse>33504</ax27:typesofUse>
+                  <ax27:unitCrId>-1</ax27:unitCrId>
+                  <ax27:unitCrIdDesc>Contenido Multimedia</ax27:unitCrIdDesc>
+                  <ax27:unitsFree>N/A</ax27:unitsFree>
+                  <ax27:unitsType>K Bytes</ax27:unitsType>
+               </ax27:trafficDetails>
+               <ax27:trafficDetails type="com.corte.webservices.domain.TrafficDetails">
+                  <ax27:balanceUnits>By Use</ax27:balanceUnits>
+                  <ax27:ratedUnits>3</ax27:ratedUnits>
+                  <ax27:typesofUse>32506</ax27:typesofUse>
+                  <ax27:unitCrId>-3</ax27:unitCrId>
+                  <ax27:unitCrIdDesc>Navegación Movil Web</ax27:unitCrIdDesc>
+                  <ax27:unitsFree>N/A</ax27:unitsFree>
+                  <ax27:unitsType>K Bytes</ax27:unitsType>
+               </ax27:trafficDetails>
+               <ax27:trafficDetails type="com.corte.webservices.domain.TrafficDetails">
+                  <ax27:balanceUnits>21742</ax27:balanceUnits>
+                  <ax27:ratedUnits>2258</ax27:ratedUnits>
+                  <ax27:typesofUse>32500</ax27:typesofUse>
+                  <ax27:unitCrId>60026</ax27:unitCrId>
+                  <ax27:unitCrIdDesc>24000 seg Dig-Dig</ax27:unitCrIdDesc>
+                  <ax27:unitsFree>24000</ax27:unitsFree>
+                  <ax27:unitsType>Segundos</ax27:unitsType>
+               </ax27:trafficDetails>
+               <ax27:trafficDetails type="com.corte.webservices.domain.TrafficDetails">
+                  <ax27:balanceUnits>204</ax27:balanceUnits>
+                  <ax27:ratedUnits>46</ax27:ratedUnits>
+                  <ax27:typesofUse>32510,32515,32516,32517,32518,32519</ax27:typesofUse>
+                  <ax27:unitCrId>60029</ax27:unitCrId>
+                  <ax27:unitCrIdDesc>250 SMS</ax27:unitCrIdDesc>
+                  <ax27:unitsFree>250</ax27:unitsFree>
+                  <ax27:unitsType>SMSMO Evento de mensajes</ax27:unitsType>
+               </ax27:trafficDetails>
+               <ax27:trafficDetails type="com.corte.webservices.domain.TrafficDetails">
+                  <ax27:balanceUnits>4458</ax27:balanceUnits>
+                  <ax27:ratedUnits>5542</ax27:ratedUnits>
+                  <ax27:typesofUse>32420,32440,32509</ax27:typesofUse>
+                  <ax27:unitCrId>60005</ax27:unitCrId>
+                  <ax27:unitCrIdDesc>10000 seg Dig-Ot.Op.</ax27:unitCrIdDesc>
+                  <ax27:unitsFree>10000</ax27:unitsFree>
+                  <ax27:unitsType>Segundos</ax27:unitsType>
+               </ax27:trafficDetails>
+            </ax27:trafficDetailsData>
+            <ax27:trafficUsageDetails type="com.corte.webservices.domain.UsageAmountData">
+               <ax27:trafficUsage type="com.corte.webservices.domain.TrafficUsageData">
+                  <ax27:avaliableUnits>500</ax27:avaliableUnits>
+                  <ax27:totalTrafficAmount>17557</ax27:totalTrafficAmount>
+                  <ax27:trafficDescription>GPRS</ax27:trafficDescription>
+               </ax27:trafficUsage>
+               <ax27:trafficUsage type="com.corte.webservices.domain.TrafficUsageData">
+                  <ax27:avaliableUnits>700</ax27:avaliableUnits>
+                  <ax27:totalTrafficAmount>0</ax27:totalTrafficAmount>
+                  <ax27:trafficDescription>SMS</ax27:trafficDescription>
+               </ax27:trafficUsage>
+               <ax27:trafficUsage type="com.corte.webservices.domain.TrafficUsageData">
+                  <ax27:avaliableUnits>21742</ax27:avaliableUnits>
+                  <ax27:totalTrafficAmount>0</ax27:totalTrafficAmount>
+                  <ax27:trafficDescription>Voz D-D</ax27:trafficDescription>
+               </ax27:trafficUsage>
+               <ax27:trafficUsage type="com.corte.webservices.domain.TrafficUsageData">
+                  <ax27:avaliableUnits>4458</ax27:avaliableUnits>
+                  <ax27:totalTrafficAmount>0</ax27:totalTrafficAmount>
+                  <ax27:trafficDescription>Voz OtOp</ax27:trafficDescription>
+               </ax27:trafficUsage>
+            </ax27:trafficUsageDetails>
+         </ns:return>
+      </ns:getIVRSMSTextInfoResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
